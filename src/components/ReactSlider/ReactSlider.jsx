@@ -1099,7 +1099,7 @@ class ReactSlider extends React.Component {
     renderMarks() {
         let { marks } = this.props;
 
-        const range = this.props.max - this.props.min + 1;
+        const range = this.props.max - this.props.min;
 
         if (typeof marks === 'boolean') {
             marks = Array.from({ length: range }).map((_, key) => key);
